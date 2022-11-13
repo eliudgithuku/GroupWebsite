@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/page.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section class="shows">
+        <header>
+            <img src="./images/logo.png" alt="logo"class="logoimg">
+            <p># Good Music <span> Good Stories</span> </p>
+            <h4 class="freq">100.2FM</h4>
+        </header>
+<nav>
+<div class="sidebar" id="sidenav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="Contact.html" target="_blank">Contact</a>
+    <a href="#about">About</a>
+    <a href="shows.html">Shows</a>
+  </div>
+  <div id="menuBtn">
+    <img src="./images/menu.png" id="menu">
+</div>
+</nav>  
+
+<section id="Progress">
+    <div class="title-text">
+        <p>Shows</p>
+        <h1> Shows We Host</h1>
+    </div>
+<div class="progress-box">
+    <div class="single-progress">
+        <img src="./images/radio-1603228_1920.jpg">
+        <div class="Overlay"></div>
+            <div class="Progress-desc">
+                <h3>Morning BreakFast</h3>
+            <hr>
+            <p>Monday to Friday At 5.00AM
+            </p>
+            </div>
+    </div>
+    <div class="single-progress">
+        <img src="./images/radio-1603228_1920.jpg">
+        <div class="Overlay"></div>
+            <div class="Progress-desc">
+                <h3>Morning Briefing</h3>
+            <hr>
+            <p>Monday to Friday At 6.00AM -10.00AM
+            </p>
+            </div>
+    </div>
+    <div class="single-progress">
+        <img src="./images/radio-1603228_1920.jpg">
+        <div class="Overlay"></div>
+            <div class="Progress-desc">
+                <h3>Music Drive</h3>
+                <hr>
+                <p>Monday to Friday At 10.00AM -1.00PM
+                </p>
+            </div>
+    </div> 
+     <div class="single-progress">
+        <img src="./images/radio-1603228_1920.jpg">
+        <div class="Overlay"> </div>
+            <div class="Progress-desc">
+                <h3>Morning Briefing</h3>
+                <hr>
+                <p>Monday to Friday At 6.00AM -10.00AM
+                </p>
+            </div>
+     </div>
+</div>
+</section>
+    </section>
+    <script>
+        var menuBtn= document.getElementById("menuBtn")
+    var sidenav= document.getElementById("sidenav")
+    var menu= document.getElementById("menu")
+
+    sidenav.style.left == "-250px";
+
+    menuBtn.onclick= function() {
+        if( sidenav.style.left == "-250px"){
+            sidenav.style.left="0";
+            menu.src="./images/close.png";
+        }
+        else{
+            sidenav.style.left="-250px";
+            menu.src="./images/menu.png";
+        }
+     }
+    </script>
+</body>
+</html>
